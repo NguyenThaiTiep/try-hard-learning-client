@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from 'react';
+import { Router } from 'react-router';
+import { history } from '../service/history';
+import RouteApp from './route';
 
-const index = () => {
-  return <div></div>;
+const App = () => {
+  useEffect(() => {}, []);
+  return (
+    <div className="App">
+      <Router history={history}>
+        <RouteApp />
+        
+      </Router>
+    </div>
+  );
 };
 
-export default index;
+export default App;
