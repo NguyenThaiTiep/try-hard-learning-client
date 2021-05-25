@@ -1,5 +1,5 @@
 import AboutPage from '../pages/about';
-import AdminPage from '../pages/admin';
+
 import HomePage from '../pages/home';
 import NotFoundPage from '../pages/notFound';
 
@@ -32,12 +32,5 @@ export const routeConfig = [
     roleDefine: [],
     public: true,
     component: NotFoundPage,
-  },
-  {
-    path: '/admin',
-    roleDefine: [],
-    name: 'Quản lý',
-    public: true,
-    component: AdminPage,
   },
 ];
